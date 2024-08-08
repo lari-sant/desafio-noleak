@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  label, input, textarea, button {
+    margin: 5px 0;
+  }
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  #result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #heatmapContainer {
+    position: relative;
+  }
+  #heatmapImage {
+    max-width: 800px;
+    max-height: 600px;
+  }
+  #heatmap {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #downloadLink {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #downloadLink:hover {
+    background-color: #007B9A;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heatmap Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/heatmap.js/2.0.5/heatmap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1>Heatmap Generator</h1>
+  <form id="heatmapForm">
+    <label for="jsonInput">JSON Input:</label>
+    <textarea id="jsonInput" rows="10" cols="50" required></textarea>
+    <label for="relevanceObject">Relevance Object:</label>
+    <input type="text" id="relevanceObject" required>
+    <label for="imageUrl">Image URL:</label>
+    <input type="url" id="imageUrl" required>
+    <button type="submit">Generate Heatmap</button>
+  </form>
+  <div id="result">
+    <div id="heatmapContainer">
+      <img id="heatmapImage" alt="Heatmap will be shown here">
+      <div id="heatmap"></div>
+    </div>
+    <a id="downloadLink" href="#">Download Heatmap</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
